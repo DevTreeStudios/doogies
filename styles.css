@@ -1,0 +1,121 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+:root {
+  --red: #d61a1a;
+  --yellow: #ffd700;
+  --black: #111;
+  --white: #fff;
+}
+
+.navbar {
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--yellow);
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--black);
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.show { display: flex; }
+  .nav-toggle { display: block; }
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1606756790138-97dedf22d4ae?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.cta {
+  background: var(--red);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: var(--white);
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.cta:hover { background: var(--yellow); color: var(--black); }
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background: var(--white);
+}
+
+.feature-card {
+  background: var(--red);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+}
