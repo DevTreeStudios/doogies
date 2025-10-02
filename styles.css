@@ -107,9 +107,9 @@ a{color:inherit}
 .contact{padding:48px 0;background:linear-gradient(180deg, transparent, rgba(0,0,0,0.02))}
 .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:22px}
 .contact-card,.map-card{background:var(--card-glass);padding:22px;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.6)}
-.zip-form{display:flex;gap:10px;margin-top:12px}
-.zip-form input{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white)}
-.zip-form button{padding:10px 14px;border-radius:10px;background:var(--red);color:var(--white);border:0}
+.newsletter-form{display:flex;gap:10px;margin-top:12px}
+.newsletter-form input{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white)}
+.newsletter-form button{padding:10px 14px;border-radius:10px;background:var(--red);color:var(--white);border:0}
 
 .site-footer{padding:26px 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:28px}
 .footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}
