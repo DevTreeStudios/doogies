@@ -20,7 +20,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('in-view');
-      // staggered children reveal for cards
       if (entry.target.classList.contains('cards')) {
         Array.from(entry.target.children).forEach((c, i) => {
           setTimeout(()=> c.classList.add('in-view'), i*120 + 40);
