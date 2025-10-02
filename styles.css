@@ -48,7 +48,7 @@ a{color:inherit}
 @media(max-width:980px){.hero-grid{grid-template-columns:1fr;gap:28px;padding:48px 0}}
 
 .hero-left{padding-left:6px;max-width:720px}
-.hero-center{display:flex;justify-content:center}
+.hero-center{display:flex;align-items:center}
 .neon-badge{
   display:inline-block;padding:6px 12px;border-radius:999px;font-weight:700;background:linear-gradient(90deg,var(--yellow),#ffd96c);color:var(--black);box-shadow:0 6px 18px rgba(255,210,0,0.18);letter-spacing:1px;margin-bottom:18px;animation:flicker 3.4s infinite}
 @keyframes flicker{0%,19%,21%,23%,100%{opacity:1}20%{opacity:.5}22%{opacity:.3}}
