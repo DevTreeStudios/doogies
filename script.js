@@ -13,6 +13,13 @@ window.addEventListener('load', () => {
 
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  const neonEl = document.getElementById('neon-badge');
+  let now = new Date().getHours();
+  let neonText = 'OPEN';
+  if (now > 19 & now < 20) { neonText = 'CLOSING SOON'; }
+  if (now >= 20 & now < 11) { neonText = 'CLOSED'; }
+  if (neonEl) neonEl.textContent = neonText;
 });
 
 const observerOpts = { threshold: 0.12 };
