@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
   const neonEl = document.getElementById('neon-badge');
   let now = new Date().getHours();
   let neonText = 'OPEN';
-  if (now > 19 & now < 20) { neonText = 'CLOSING SOON'; }
+  if (now == 19) { neonText = 'CLOSING SOON'; }
   if (now >= 20 & now < 11) { neonText = 'CLOSED'; }
   if (neonEl) neonEl.textContent = neonText;
 });
